@@ -2,16 +2,16 @@ package VideoGame.Prototype;
 
 import VideoGame.MMORPGVideoGame;
 
-public class FF15VideoGame extends MMORPGVideoGame {
-    public FF15VideoGame(String name, int amount, int price, int releaseYear, int subscriptionPrice) {
+public class FF15MMORPGVideoGame extends MMORPGVideoGame {
+    public FF15MMORPGVideoGame(String name, int amount, int price, int releaseYear, int subscriptionPrice) {
         super(name, amount, price, releaseYear, subscriptionPrice);
     }
 
     @Override
     public MMORPGVideoGame copy() {
-        VideoGame.Prototype.FF15VideoGame ff15VideoGame = new VideoGame.Prototype.FF15VideoGame(
+        FF15MMORPGVideoGame ff15MMORPGVideoGame = new FF15MMORPGVideoGame(
                 this.getName(),this.getAmount(),this.getPrice(),this.getReleaseYear(),this.getSubscriptionPrice()
         );
-        return ff15VideoGame;
+        return ff15MMORPGVideoGame;
     }
 }
