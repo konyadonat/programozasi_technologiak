@@ -10,7 +10,7 @@ public abstract class BasicVideoGame implements VideoGame{
 
     }
 
-    String name;
+    private String name;
     @Override
     public String getName() {
         return name;
@@ -27,7 +27,7 @@ public abstract class BasicVideoGame implements VideoGame{
         this.name=name;
     }
 
-    int amount;
+     private int amount;
     @Override
     public int getAmount() {
         return amount;
@@ -39,7 +39,7 @@ public abstract class BasicVideoGame implements VideoGame{
             throw new RuntimeException("A mennyiség legalább 1!");
         this.amount = amount;
     }
-    int price;
+    private int price;
     @Override
     public int getPrice() {
         return price;
@@ -51,7 +51,7 @@ public abstract class BasicVideoGame implements VideoGame{
             throw new RuntimeException("A játék ára nem lehet negatív!");
         this.price=price;
     }
-    int releaseYear;
+    private int releaseYear;
     @Override
     public int getReleaseYear() {
         return releaseYear;
