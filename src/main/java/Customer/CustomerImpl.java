@@ -19,6 +19,7 @@ public class CustomerImpl implements Customer{
         this.setAge(age);
         this.setCountry(country);
         this.setAddress(address);
+        cart = new MemoryVideoGameData();
     }
 
     @Override
