@@ -16,5 +16,10 @@ public interface Customer {
 
     String getAddress();
     void setAddress(String address);
-    
+
+    List<VideoGame> getVideoGamesByCustomer();
+    void addVideoGameToCart(VideoGame videoGame);
+
+    void orderProducts();
+
 }
