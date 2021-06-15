@@ -36,8 +36,8 @@ public abstract class BasicVideoGame implements VideoGame{
     @Override
     public void changeAmount(int amount) {
         int amountChange = this.amount+amount;
-        if(amountChange < 1)
-            throw new RuntimeException("A mennyiség legalább 1!");
+        if(amountChange <= 0)
+            throw new RuntimeException("A játék elfogyott!");
         this.amount = amountChange;
     }
     private int price;
