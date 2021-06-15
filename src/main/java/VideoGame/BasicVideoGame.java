@@ -38,7 +38,7 @@ public abstract class BasicVideoGame implements VideoGame{
         int amountChange = this.amount+amount;
         if(amountChange < 1)
             throw new RuntimeException("A mennyiség legalább 1!");
-        this.amount = amount;
+        this.amount = amountChange;
     }
     private int price;
     @Override
