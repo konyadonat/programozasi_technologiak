@@ -13,7 +13,7 @@ public interface Warehouse {
 
     void addCustomer(Customer c);
     List<Customer> getCustomers();
-    Customer getCustomerById(String id);
+    Customer getCustomerByName(String name);
 
     void addOrder(Order o);
     List<Order> getOrders();
