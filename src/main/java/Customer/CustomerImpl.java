@@ -1,8 +1,13 @@
 package Customer;
 
+import Data.Memory.MemoryVideoGameData;
+import Order.OrderBuilder;
+import Order.OrderBuilderImpl;
 import VideoGame.VideoGame;
+import Warehouse.Warehouse;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerImpl implements Customer{
@@ -72,6 +77,39 @@ public class CustomerImpl implements Customer{
                 throw new RuntimeException("A vásárló címe legalább 3 karakter!");
         this.address=address;
     }
+
+    private MemoryVideoGameData cart;
+
+    public MemoryVideoGameData getVideoGameDatas(){
+        return  this.cart;
+    }
+
+    @Override
+    public List<VideoGame> getVideoGamesByCustomer() {
+        List<VideoGame> temp = new ArrayList<>();
+        for (VideoGame videoGame : cart.queryVideoGame()) {
+            temp.add(videoGame);
+        }
+        return temp;
+    }
+
+    @Override
+    public void orderProducts(Warehouse warehouse) {
+        if(cart.queryVideoGame().size() == 0)
+            throw new RuntimeException("A kosár üres!");
+        OrderBuilderImpl builder = new OrderBuilderImpl();
+        builder.setCustomer(this);
+        builder.addVideoGameData(this.cart);
+        warehouse.addOrder(builder.getOrder());
+
+    }
+
+    @Override
+    public void addVideoGameToCart(VideoGame videoGame) {
+        cart.addVideoGame(videoGame);
+    }
+
+
 
 
 
