@@ -1,6 +1,7 @@
 package Customer;
 
 import VideoGame.VideoGame;
+import Warehouse.Warehouse;
 
 import java.util.List;
 
@@ -20,6 +21,6 @@ public interface Customer {
     List<VideoGame> getVideoGamesByCustomer();
     void addVideoGameToCart(VideoGame videoGame);
 
-    void orderProducts();
+    void orderProducts(Warehouse warehouse);
 
 }
