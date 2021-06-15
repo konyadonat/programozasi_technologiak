@@ -67,7 +67,7 @@ public abstract class BasicVideoGame implements VideoGame{
     }
 
     @Override
-    public void discountByPercentage(int percentage) {
+    public void EditPriceByPercentage(int percentage) {
         double discountByPercentage = (100 + percentage) / 100.0;
         int newPrice = (int)(this.getPrice() * discountByPercentage);
         this.setPrice(newPrice);

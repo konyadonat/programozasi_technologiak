@@ -13,6 +13,6 @@ public interface VideoGame {
     int getReleaseYear();
     void setReleaseYear(int releaseYear);
 
-    void discountByPercentage(int percentage);
+    void EditPriceByPercentage(int percentage);
 
 }
