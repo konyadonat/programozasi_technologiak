@@ -2,10 +2,11 @@ package VideoGame;
 
 public abstract class BasicVideoGame implements VideoGame{
     public BasicVideoGame(String name, int amount, int price, int releaseYear) {
-        this.name = name;
-        this.amount = amount;
-        this.price = price;
-        this.releaseYear = releaseYear;
+        setName(name);
+        setAmount(amount);
+        setPrice(price);
+        setReleaseYear(releaseYear);
+
     }
 
     String name;
