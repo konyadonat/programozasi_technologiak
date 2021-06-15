@@ -9,5 +9,5 @@ public interface OrderBuilder {
 
     OrderBuilder setCustomer(Customer customer);
 
-    OrderBuilder addVideogameData(MemoryVideoGameData memoryVideoGameData);
+    OrderBuilder addVideoGameData(MemoryVideoGameData memoryVideoGameData);
 }
