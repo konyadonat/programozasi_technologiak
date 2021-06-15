@@ -18,4 +18,6 @@ public abstract class MMORPGVideoGame extends BasicVideoGame{
             throw new RuntimeException("Az előfizetés ára nem lehet negatív!");
         this.subscriptionPrice = subscriptionPrice;
     }
+
+    public abstract MMORPGVideoGame copy();
 }
