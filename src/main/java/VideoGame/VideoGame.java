@@ -5,7 +5,7 @@ public interface VideoGame {
     void setName(String name);
 
     int getAmount();
-    void setAmount(int amount);
+    void changeAmount(int amount);
 
     int getPrice();
     void setPrice(int price);

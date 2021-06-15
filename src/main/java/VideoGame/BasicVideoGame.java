@@ -4,7 +4,7 @@ public abstract class BasicVideoGame implements VideoGame{
 
     public BasicVideoGame(String name, int amount, int price, int releaseYear) {
         setName(name);
-        setAmount(amount);
+        changeAmount(amount);
         setPrice(price);
         setReleaseYear(releaseYear);
 
@@ -34,8 +34,9 @@ public abstract class BasicVideoGame implements VideoGame{
     }
 
     @Override
-    public void setAmount(int amount) {
-        if(amount < 1)
+    public void changeAmount(int amount) {
+        int amountChange = this.amount+amount;
+        if(amountChange < 1)
             throw new RuntimeException("A mennyiség legalább 1!");
         this.amount = amount;
     }
