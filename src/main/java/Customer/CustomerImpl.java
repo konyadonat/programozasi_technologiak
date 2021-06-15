@@ -8,6 +8,14 @@ import java.util.List;
 public class CustomerImpl implements Customer{
 
     private String name;
+
+    public CustomerImpl(String name, int age, String country, String address) {
+        this.setName(name);
+        this.setAge(age);
+        this.setCountry(country);
+        this.setAddress(address);
+    }
+
     @Override
     public String getName() {
         return name;
