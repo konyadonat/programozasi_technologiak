@@ -1,2 +1,6 @@
 
 .idea/uiDesigner.xml
+target/classes/org/example/App.class
+target/classes/VideoGame/BasicVideoGame.class
+target/classes/VideoGame/MMORPGVideoGame.class
+*.class
