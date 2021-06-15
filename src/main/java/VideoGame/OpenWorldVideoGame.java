@@ -1,6 +1,6 @@
 package VideoGame;
 
-public abstract class OpenWorldVideoGame extends BasicVideoGame{
+public class OpenWorldVideoGame extends BasicVideoGame{
 
 
     public OpenWorldVideoGame(String name, int amount, int price, int releaseYear, int worldSize) {
