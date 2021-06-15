@@ -1,9 +1,9 @@
 package VideoGame;
 
-public abstract class OpenWordVideoGame extends BasicVideoGame{
+public abstract class OpenWorldVideoGame extends BasicVideoGame{
 
 
-    public OpenWordVideoGame(String name, int amount, int price, int releaseYear,int worldSize) {
+    public OpenWorldVideoGame(String name, int amount, int price, int releaseYear, int worldSize) {
         super(name, amount, price, releaseYear);
         setWorldSize(worldSize);
     }
