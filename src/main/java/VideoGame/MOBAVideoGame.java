@@ -17,4 +17,7 @@ public abstract class MOBAVideoGame extends BasicVideoGame{
             throw new RuntimeException("A csapat legalaább 2 ember!");
         this.teamSize = teamSize;
     }
+
+    public abstract MOBAVideoGame copy();
+
 }
