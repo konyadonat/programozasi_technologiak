@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Assertions;
 public class WowPrototypeTest {
 
     @Test
-    public void SameNamePrototypeTest(){
+    public void PrototypeTest(){
         WoWMMORPGVideoGame woWMMORPGVideoGame = new WoWMMORPGVideoGame(
-                "World of Warcarft",
+                "World of Warcraft",
                 30,
                 14000,
                 2010,
@@ -17,7 +17,9 @@ public class WowPrototypeTest {
         );
         WoWMMORPGVideoGame woWMMORPGVideoGame1 = (WoWMMORPGVideoGame)  woWMMORPGVideoGame.copy();
 
-        Assertions.assertEquals(woWMMORPGVideoGame.getName(),woWMMORPGVideoGame1.getName());
+        woWMMORPGVideoGame1.setName("Word of Warcraft Classic");
+
+        Assertions.assertEquals(woWMMORPGVideoGame.getPrice(),woWMMORPGVideoGame1.getPrice());
 
     }
 }
