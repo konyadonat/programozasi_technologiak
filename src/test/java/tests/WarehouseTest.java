@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Assertions;
 public class WarehouseTest {
 
     @Test
-    public void productToBuyerIdTest() {
+    public void productToCustomerNameTest() {
         CustomerImpl customer = new CustomerImpl(
                 "Kónya Donát",
                 20,
