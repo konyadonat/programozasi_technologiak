@@ -53,8 +53,7 @@ public class BasicWarehouse implements Warehouse{
     public List<Customer> getCustomers() {
         return memoryCustomerData.queryCustomers();
     }
-
-    //Hibás lehet
+    
     @Override
     public Customer getCustomerByName(String name) {
         return memoryCustomerData.queryCustomerByName(name);
