@@ -15,7 +15,7 @@ public class WowPrototypeTest {
                 2010,
                 3500
         );
-        WoWMMORPGVideoGame woWMMORPGVideoGame1 = (WoWMMORPGVideoGame)  woWMMORPGVideoGame.copy();
+        WoWMMORPGVideoGame woWMMORPGVideoGame1 = (WoWMMORPGVideoGame)woWMMORPGVideoGame.copy();
 
         woWMMORPGVideoGame1.setName("Word of Warcraft Classic");
 
